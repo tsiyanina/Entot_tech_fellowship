@@ -1,1 +1,6 @@
-day1 command line directory introduction to programming front_back end
+1.command line 
+2.directory 
+3.introduction to programming 
+4.front_back end
+5.Drawing Ellipse
+6.Wengi is awsome
