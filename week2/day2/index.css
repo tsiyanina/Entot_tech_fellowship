@@ -1,3 +1,54 @@
 body{
-background-color: Blue;
+    background-color: whitesmoke;
+
+}
+.img{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.nav
+    { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav1{
+    margin-left: 20px;
+    margin-right: 20px
+}
+.about{  
+    font-style: italic; 
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.skills{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.findme{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont{
+   margin-right: 20px;
+   margin-left: 20px;
+    border-radius: 100px;
+    width: 80px;
+    height: 50px;
+}
+.find{
+    display: flex;
 }

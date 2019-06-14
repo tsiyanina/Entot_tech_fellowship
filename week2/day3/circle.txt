@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> 
+<main>
+    <body>
+        <style>
+           
+                .red_text{
+                    color:red;
+                }
+                p{
+                    font-size: 16px;
+                    font-family: monospace;
+                }
+                h1{
+                    font-family: Lobster,monospace;
+                }
+                .small-image{
+                    width: 100px;
+                }
+                .thin-green-border{
+                    border-color: green;
+                    border-width: 10px;
+                    border-style: solid;
+                    border-radius: 10px;
+                }
+        </style>
+        <p> view more
+    <a href="#footer">jump to botom </a>
+</p>
+    <img class="small-image thin-green-border" src="_20181003_070130.jpg" alt="baby".>
+
+          <h1>tamiralech</h1>
+        <h2 class="red_text"> web detail  </h2>
+
+
+  <p class="red_text">
+        this is the first traing of my web education jdhfjnjhsdjnfmnsds
+        jdifjdkfhjkdnfjidfgfdgidgisjgdidjgi
+        jdxkhxfjdhgjd
+    </p>
+    <ol> 
+        <li>lovely </li>
+        <li>awosome </li>
+        <li>hamble </li>
+    </ol>
+</main>
+<main>
+    <p>
+            after this training i amhhdgfgghggg to be profesitional personvbcvbgdghgdhghd
+            after this training i amhhdgfgghggg to be profesitional personvbcvbgdghgdhghd
+            after this training i amhhdgfgghggg to be profesitional personvbcvbgdghgdhghd
+            after this training i amhhdgfgghggg to be profesitional personvbcvbgdghgdhghd
+            after this training i amhhdgfgghggg to be profesitional personvbcvbgdghgdhghd
+            after this training i amhhdgfgghggg to be profesitional personvbcvbgdghgdhghd
+
+            after this training i amhhdgfgghggg to be profesitional personvbcvbgdghgdhghd
+            after this training i amhhdgfgghggg to be profesitional personvbcvbgdghgdhghd
+    </p>
+</main>
+<form action="cute baby">
+<input type="text" placeholder="your name"  required>
+<button type="submit">this button submits the form</button>
+</form>
+<label>
+    <input type="radio" name ="lovely -ugly">lovely<br>
+    <input type="radio" name ="lovely -ugly">ugly<br>
+</label>
+<footer id="footer">   copyrigt </footer>
+
+</body>
+</html>

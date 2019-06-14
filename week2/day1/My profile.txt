@@ -1,6 +1,6 @@
  About : I am Tsion Alemayehu. I live in Addis Ababa, I am a software engineer and front-end web developer.
  I am now a member of entoto project and we are students from all over ethiopia. 
- I know 2 programming languages and have the exprance of 3 month.
+ I know 2 programming languages and have the exprance of 2 months of intern at Haramaya Univeristy and 3 month as a sales girl at Dashn Banks sc.
  MY skills - Web development
              Html css and Javascript
 			 cloud based database managment(FireBase)
