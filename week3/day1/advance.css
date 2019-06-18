@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.div1, 
+.div2
+{
+    color: pink;
+}
+.div1 ul{
+
+    list-style: lower-latin;
+}
+.divimg1,
+.divimg2
+{
+    width: 60px;
+    height: 60px;
+    /* padding: 50px; */
+}
+div1 + div2 {
+    
+    background-color: deepskyblue;
+    /* width: 400px;
+    height: 80px; */
+    }
+    div2:hover {
+        background-color: green;
+        }
