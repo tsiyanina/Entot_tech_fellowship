@@ -1,0 +1,122 @@
+#####This is a note that i take for my SQL class #####
+
+---> The first command that i use is 
+     1. Select CustomerName from Customer;
+            -This show me all the customer name from my customer table
+
+---> With comma between the code above i see that i can get different coloumn values at the same time
+      2. Select CustomerName, city, postalCode from customer;
+         - This will show the name,city and postal code of indivsuale elements of the table
+
+---> By using DISTINCT Key word with our Select command we will be able to se a DISTINCT values of the columen
+   3. Select DISTINCT country from customer;
+        - This will show a values that is not repeated or distinct to m customer table
+
+---> We Use Where clouses to filter records.
+    4. Select CustomerName from customer where CustomerId = 4
+       - This show the name of the customer with the Id = to 4
+
+---> To show all Details of the information with the while Key Word we use *
+    5. Select * from customer where CustomerId = 4
+       - This shows the all the information in the customer table with the id of 4
+
+---> using different mathimatical experssion we can see all the values that are equal or less or greater 
+    6. Select * from customer where CustomerId <> 1 (show all entities of the table with Id not equal to 1 )
+    7. Select * from customer where CustomerId <1 (This show zero row since there is no value with Id less than  1  )
+    8. Select * from customer where CustomerId > 1 (show all entities of the table with Id greater than 1 )
+    9. Select * from customer where CustomerName like 'A%'
+
+---> SQL also uses AND, OR operations 
+   10. Select * from Customer Where CustomerId='1' And city = 'Germany'
+      - This statment will give result if the statment is true for both condiotn
+   11.  Select * from CustomerId = '4' OR city = 'Germany'
+      - This show the value to either true of the two
+
+---> SQL Commbined AND & OR
+    12. SELECT * FROM Customers WHERE Country='Germany'AND (City='Berlin' OR City='München');
+    - this statment used to show an enitiy that have Germany as country and berlin or munchen as a city
+
+---> The SQL ORDER BY Keyword
+    13.  SELECT CustomerID, CustomerName FROM customer ORDER BY CustomerID ASC
+     - This will show the entities with there ID in assending ORDER
+    14. SELECT CustomerID, CustomerName FROM customer ORDER BY CustomerID DESC
+     - This will show the entities with there ID in assending ORDER
+
+---> The SQL INSERT INTO Statement
+    15.INSERT INTO `customer`(`CustomerID`, `CustomerName`, `ContactName`, `Address`, `City`, `PostalCode`, `Country`) VALUES ('6', 'tsion', 'Alemayehu', 'AA', 'Aaa', '092', 'Ethiopia')
+      - This equation saves one row
+
+---> The SQL Update statment 
+    16. Update customer country = 'Japan' where country = 'Ethiopia'
+    This will Update the country value where the country is Ethiopia from the list
+
+---> The SQL Delete Statement
+    17. Delete from customer where country = 'Japan';
+    - This will Delete the row in which the value of cuntry equals to Ethiopia
+    - Here I have seen that the server give as an alert while we try to Delete the row
+    - we can also the AND & OR opperations
+
+    ------------------------------------------------
+    -                                              -
+    -  NOTE ***                                    -
+    -    I have problem in using TOP               -
+    -                                              -                                             
+    ------------------------------------------------
+
+    Instaed of using top we need to use limit 
+
+    * SELECT From customer limit 2;
+
+---> The SQL LIKE Operator
+    18. Select from customer where city LIKE '%s'
+    - This will show the customer entity with the city that have the name starting with 's'
+    - The % sign used to indicate the missing letters
+
+---> SQL Wildcard Characters
+    - '-' is used as a substitute for a single Character
+    - [charlist]	Sets and ranges of characters to match
+    - [^charlist] or [!charlist]	Matches only a character NOT specified within the brackets
+
+---> SQL Join statment
+    19. Select second.OrderId, Customer.CustomerName, second.OrderDate From second Inner Join customer on Second.CustomerID = customer.CustomerID
+    - This will show as the join of the two tables.
+    - we can also use Orderd by Keyword here if we wish to oorder the output
+    20.Select second.OrderId, Customer.CustomerName, second.OrderDate From second Inner Join customer on Second.CustomerID = customer.CustomerId ORDER BY Customers.CustomerName;
+
+---> Join Left
+   21. SELECT Customers.CustomerName, Orders.OrderID FROM Customers LEFT JOIN Orders ON Customers.CustomerID=Orders.CustomerID ORDER BY Customers.CustomerName;
+    - This is used to show all the entities even if they don'thave match and it must appera at the right of the code
+   22. select * from customer right join second on customer.CustomerID= second.CustomerID
+
+---> The Union opperations
+  23. SELECT CustomerID FROM Customer UNION ALL SELECT CustomerID City FROM second
+   - This statment are used to shoe the Commbined outputs of the two tables
+
+---> The SQL SELECT INTO Statement
+24. Select Into customerBk from customer;
+  - This is used to copy the entites of cusomer table to the customerbk table
+
+---> SQL Constraints
+    - used to specify rules for the data in a table
+         ---> Not Null (are used not to leave the entities null)
+         ----> Unique (Ensures that each row for a column must have a unique value)
+         -----> PRIMARY KEY (A combination of a NOT NULL and UNIQUE.)
+         ------> FOREIGN KEY ( Ensure the referential integrity of the data in one table to match values in another table)
+         -------> CHECK (Ensures that the value in a column meets a specific condition)
+         --------> DEFAULT (Specifies a default value for a column)
+
+
+---> Function in SQL
+          ------>25. AVG  * SELECT AVG(CustomerID) FROM customer (shows the average value of customerID)
+          ------>26. Count SELECT COUNT(*) FROM cusomer; (Will return the total entity values of the table)
+          ------>27. SUM() SELECT SUM(CustomerID) FROM customer gives the total value of the columen 
+             
+
+
+
+
+
+----------------------------------------------------////////////////////---------------------------------------------------------------------------
+
+
+
