@@ -1,0 +1,1 @@
+Day2 folder is a link to codepen that conatis some javascript code as an introduction

@@ -1,0 +1,1 @@
+This is  an exercise that we had on day4 we use codepen we cover objects and for loop  using javascript

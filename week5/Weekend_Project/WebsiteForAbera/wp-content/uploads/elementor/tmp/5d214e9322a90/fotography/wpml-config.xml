@@ -1,0 +1,18 @@
+<wpml-config>
+<admin-texts>
+<key name="theme_mods_fotography">
+    <key name="fotography_copyright" />
+    <key name="fotography_homepage_about_title_one" />
+    <key name="fotography_homepage_about_title_two" />
+    <key name="fotography_homepage_about_title_three" />
+    <key name="fotography_homepage_about_title_four" />
+    <key name="fotography_homepage_gallery_main_title" />
+    <key name="fotography_homepage_our_service_title" />
+    <key name="fotography_homepage_blogs_title" />
+    <key name="fotography_homepage_call_action_title" />
+    <key name="fotography_homepage_call_action_sub_title" />
+    <key name="fotography_homepage_call_action_button_name" />
+    <key name="fotography_homepage_quick_phone" />
+</key>
+</admin-texts>
+</wpml-config>

@@ -1,0 +1,1 @@
+On The second week of entoto we started the basic html and we also construct  wireframe for our portifallo website using wireframe cc.

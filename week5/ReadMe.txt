@@ -1,0 +1,1 @@
+This week is all about wordpress we practice word press through the week and finally build a wordpress website for a photographer call Abera  

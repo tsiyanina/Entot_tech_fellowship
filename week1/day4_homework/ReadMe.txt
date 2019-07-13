@@ -1,0 +1,1 @@
+on day4 we had given to write a code that differ odd and even numbers
