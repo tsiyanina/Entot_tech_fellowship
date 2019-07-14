@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+  <!-- Font Awesome -->
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+     <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+  <a class="navbar-brand" href="#">Student Clearance System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="../view/viewer.php">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="../view/about.php">About</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="../view/setting.html">Setting</a>
+      </li>
+       <li class="nav-item">
+           <a class="nav-link" href="../view/requst.html">Request</a>
+      </li>  
+    </ul>
+
+  </div>
+       </nav>
+
+
+    <!-- Card -->
+<div class="col-6 col-md-4">
+
+    <!-- Card body -->
+    <div class="card-body">
+
+      <!-- Material form register -->
+      <form action="../model/update.php" method="POST" name="users">
+     <p class="h4 text-center py-4">Setting</p>
+
+          
+             <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+                <input type="text" id="materialFormCardConfirmEx" class="form-control" name="user">
+                <label for="materialFormCardConfirmEx" class="font-weight-light">user name</label>
+            </div>
+
+
+            <!-- Material input email -->
+            <div class="md-form">
+                <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+                <input type="password" id="materialFormCardConfirmEx" class="form-control" name ="pass">
+                <label for="materialFormCardConfirmEx" class="font-weight-light"> password </label>
+            </div>
+
+            <!-- Material input password -->
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input type="password" id="materialFormCardPasswordEx" class="form-control" name="newpas">
+                <label for="materialFormCardPasswordEx" class="font-weight-light">new password</label>
+            </div>
+            <!-- Material input password -->
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input type="password" id="materialFormCardPasswordEx" class="form-control" name="newpass">
+                <label for="materialFormCardPasswordEx" class="font-weight-light">confrim password</label>
+            </div>
+
+            <div class="text-center py-4 mt-3">
+                <button class="btn btn-cyan" type="submit" onclick="validate()">Change Password</button>
+            </div>
+        </form>
+        <!-- Material form register -->
+<script>
+          function validate(){
+
+
+
+var pass =document.forms["users"]["newpas"].value;
+var confirmpass= document.forms["users"]["newpass"].value;
+
+if(pass !== confirmpass){
+   alert("The Password Didn't mach");
+   die();
+   
+}
+
+
+}
+          </script>
+          
+  
+    </div>
+    <!-- Card body -->
+
+</div>
+    
+    
+
+    <footer class="page-footer font-small cyan darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Entoto Project</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+<!-- Card -->
+    
+    <!--/.Navbar-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
